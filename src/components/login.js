@@ -41,7 +41,7 @@ function correct(email,password){
     }else if(email==="m17@m.m" && password==="m"){ //edit here
         window.localStorage.setItem("admin","yes")
         window.localStorage.setItem("loggedin","yes")
-        window.location.href=`${window.location.origin}/Admin`
+        window.location.href=`${window.location.origin}/E-commerce/#/Admin`
     }
     else{
         Swal.fire("Email or Password is incorrect")

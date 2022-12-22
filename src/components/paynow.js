@@ -126,7 +126,7 @@ function Paynow(){
                                     'success'
                                   )
                                   setTimeout(() => {
-                                    window.location=window.location.origin
+                                    window.location=`${window.location.origin}/E-commerce/#`
                                   }, 2000);
                             })
                         })

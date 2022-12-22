@@ -226,11 +226,11 @@ function App() {
         <Route path="/Cart" element={cart()}/>
         <Route path="/Account/Edit-Account" element={editaccount()}/>
         <Route path="/Account/Shipping-Address" element={shippingaddress()}/>
-        <Route path="Admin/Add-Product" element={addproduct()}/>
+        <Route path="/Admin/Add-Product" element={addproduct()}/>
         <Route path="/product/:productid" element={<ProductDetails/>}/>
         <Route path="/Forget-Password" element={<Forgetpassword/>}/>
-        <Route path='Cart/Paynow' element={<Paynow/>}/>
-        <Route path='Admin/Orders' element={orders()}/>
+        <Route path='/Cart/Paynow' element={<Paynow/>}/>
+        <Route path='/Admin/Orders' element={orders()}/>
       </Routes>
       <Footer/>
     </div>

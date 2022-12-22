@@ -112,7 +112,7 @@ function ProductDetails(){
                 <h3 className="stock">Only <span>{product.stock}</span> Left</h3>
                 <button onClick={(e)=>{
                     if(loggedin===null){
-                        window.location.replace(`${window.location.origin}/Login`)
+                        window.location.replace(`${window.location.origin}/E-commerce/#/Login`)
                     }
                     else{
                         e.target.style.cursor="not-allowed"
@@ -246,7 +246,7 @@ function ProductDetails(){
                                 'success'
                               )
                             setTimeout(() => {
-                                window.location.replace(`${window.location.origin}/`)
+                                window.location.replace(`${window.location.origin}/E-commerce/#`)
                             }, 2000);
                         })
                             }
