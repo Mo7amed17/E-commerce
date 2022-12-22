@@ -5,6 +5,7 @@ import Product from "./product";
 import './product.css'
 import './filtermenu.css'
 import Swal from "sweetalert2";
+import Footer from "./footer";
 function Content(){
     let direction=0;
     let api="https://steel-synonymous-judge.glitch.me"
@@ -161,7 +162,7 @@ function Content(){
                             inputs[1].min=+input[1].value + +1
                         }
                     }}/>
-                    <input type="text"  placeholder="Max Price" onChange={(e)=>{
+                    <input type="text" placeholder="Max Price" onChange={(e)=>{
                         setmaxprice(e.target.value)
                         let resetfilter=document.querySelector(".categories .clearfilter")
                         resetfilter.style.display="block"
@@ -241,6 +242,7 @@ function Content(){
                         })
                 }
             </div>
+            <Footer/>
             </>
     )
 }

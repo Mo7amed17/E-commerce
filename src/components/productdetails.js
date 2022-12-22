@@ -213,14 +213,29 @@ function ProductDetails(){
                                                 image5
                                             ]
                                 }).then((data)=>{
-                                    Swal.fire(
-                                        'Done!',
-                                        'Changes Has Been Saved',
-                                        'success'
-                                    )
-                                    setTimeout(() => {
-                                        window.location.reload()
-                                    }, 1000);
+                                    axios.patch(`https://steel-synonymous-judge.glitch.me/${product.category}/${params.productid}`,{
+                                        title: thetitle,
+                                            description: thedescription,
+                                            price: +theprice,
+                                            stock: +thestock,
+                                            thumbnail: themainimage,
+                                            images:[
+                                                themainimage,
+                                                image2,
+                                                image3,
+                                                image4,
+                                                image5
+                                            ]
+                                    }).then((data)=>{
+                                        Swal.fire(
+                                            'Done!',
+                                            'Changes Has Been Saved',
+                                            'success'
+                                        )
+                                        setTimeout(() => {
+                                            window.location.reload()
+                                        }, 1000);
+                                    })
                                 })
                                 
                             }
@@ -240,14 +255,17 @@ function ProductDetails(){
                             if (result.isConfirmed) {
                                 axios.delete(`https://steel-synonymous-judge.glitch.me/products/${params.productid}`)
                         .then((data)=>{
-                            Swal.fire(
-                                'Deleted!',
-                                `${product.title} Has Deleted!`,
-                                'success'
-                              )
-                            setTimeout(() => {
-                                window.location.replace(`${window.location.origin}/E-commerce/#`)
-                            }, 2000);
+                            axios.delete(`https://steel-synonymous-judge.glitch.me/${product.category}/${params.productid}`)
+                            .then((data)=>{
+                                Swal.fire(
+                                    'Deleted!',
+                                    `${product.title} Has Deleted!`,
+                                    'success'
+                                  )
+                                setTimeout(() => {
+                                    window.location.replace(`${window.location.origin}/E-commerce/#`)
+                                }, 2000);
+                            })
                         })
                             }
                           })

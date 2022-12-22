@@ -40,16 +40,16 @@ function Comments(props){
             <i className="fa-regular fa-star" data="4"></i>
             <i className="fa-regular fa-star" data="5"></i>
             </div>
-            <textarea className='textarea' placeholder='Your Review' maxLength={250} minLength={50} onChange={(e)=>{
+            <textarea className='textarea' placeholder='Your Review' maxLength={100} minLength={30} onChange={(e)=>{
                 setcomment(e.target.value)
             }}/>
             <button onClick={()=>{
                 let textarea=document.querySelector("textarea")
-                        if(textarea.value.length<50){
+                        if(textarea.value.length<30){
                             Swal.fire({
                                 position: 'center',
                                 icon: 'error',
-                                title: 'Please Write At Least 50 letter',
+                                title: 'Please Write At Least 30 letter',
                                 showConfirmButton: false,
                                 timer: 2000
                             })

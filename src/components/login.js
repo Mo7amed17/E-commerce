@@ -38,7 +38,7 @@ function correct(email,password){
     }
     else if(email==="" || password===""){
         Swal.fire("Please input login data")
-    }else if(email==="m17@m.m" && password==="m"){ //edit here
+    }else if(email==="mo7amedatef17@gmailm.com" && password==="Fm301099"){ 
         window.localStorage.setItem("admin","yes")
         window.localStorage.setItem("loggedin","yes")
         window.location.href=`${window.location.origin}/E-commerce/#/Admin`

@@ -14,7 +14,6 @@ import Forgetpassword from "./components/forgetpassword";
 import Admin from "./components/admin";
 import Addproduct from "./components/addproduct"
 import Orders from "./components/orders";
-import Footer from "./components/footer";
 function App() {
   let loggedin=window.localStorage.getItem("loggedin")
   let nav=window.localStorage.getItem("nav")
@@ -232,7 +231,6 @@ function App() {
         <Route path='/Cart/Paynow' element={<Paynow/>}/>
         <Route path='/Admin/Orders' element={orders()}/>
       </Routes>
-      <Footer/>
     </div>
   );
 }

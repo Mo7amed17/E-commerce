@@ -82,6 +82,8 @@ text-transform: uppercase;
 .leftside{
 text-align: center;
 width: 250px;
+margin-left: 3px;
+
 }
 .rightside{
     height: 100%;
@@ -149,7 +151,10 @@ width: 250px;
         margin-bottom: 0;
         font-size: 16px;
       }
-      
+      .rightdetails .stars i {
+        font-size: 24px;
+        margin: 0px 4px;
+      }
 }
 @media (max-width:600px) {
     .review {
@@ -189,6 +194,10 @@ width: 250px;
             width: 350px;
             height: 120px;
             font-size: 18px;
+          }
+          .rightdetails .stars i {
+            font-size: 20px;
+            margin: 0px 4px;
           }
 }
 
@@ -272,13 +281,13 @@ width: 250px;
       
 }
 
-@media (max-width:370px) {
+@media (max-width:391px) {
     .review {
-        height: 45px;
-        width: 280px;
+        height: 66px;
+        width: 300px;
       }
       .leftside {
-        width: 230px;
+        width: 240px;
       }
       .leftside h3 {
         margin:0px;
@@ -299,6 +308,10 @@ width: 250px;
             width: 260px;
             height: 110px;
             font-size: 14px;
+          }
+          .rightdetails .stars i {
+            font-size: 14px;
+            margin: 0px 2px;
           }
       
 }
