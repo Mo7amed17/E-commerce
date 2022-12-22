@@ -156,12 +156,12 @@ function Cart(){
                             prices.forEach(price => {
                                 total=total+ +price.textContent
                             });
-                            e.target.href=e.target.origin+"/Cart/Paynow"
+                            e.target.href=e.target.origin+"/E-commerce/#/Cart/Paynow"
                             axios.patch(`https://steel-synonymous-judge.glitch.me/users/${userid}`,{
                                 subTotal:total
                             })
                             .then((data)=>{
-                                window.location=e.target.origin+"/Cart/Paynow"
+                                window.location=e.target.origin+"/E-commerce/#/Cart/Paynow"
                             })
                         }} >Conformation</Link></td>
                     </tr>
