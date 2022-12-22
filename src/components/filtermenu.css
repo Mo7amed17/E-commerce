@@ -1,0 +1,153 @@
+
+.categories{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    width: 375px;
+    border: 3px solid rgb(30, 166, 219);
+    border-left: none;
+    padding: 8px;
+    background-color: white;
+    z-index: 900;
+    border-radius: 0px 20px 20px 0px;
+    left: -395px;
+    top: 95px; 
+    justify-content: space-evenly;
+    transition-duration: 1s;
+}
+.categories button{
+    font-size: 15px;
+    padding: 3px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(30, 166, 219);
+    color: white;
+    width: fit-content;
+    margin: 4px;
+    cursor: pointer;
+    border: 1px solid rgb(30, 166, 219);
+}
+.active {
+    background-color:white !important;
+    color:  rgb(30, 166, 219) !important;
+}
+.arrow i{
+    position: absolute;
+    left: 400px;
+    top: 170px;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(30, 166, 219);
+    animation: arrow 1.2s linear  infinite alternate forwards;
+    cursor: pointer;
+}
+.arrow i::after{
+    position: absolute;
+    top: 0%;
+    left:0%;
+    content: "Filter?";
+    transform: translate(-5%,-100%);
+    font-size: 14px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(30, 166, 219);
+}
+@keyframes arrow {
+    0%,50%,75%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(20px);
+    }
+}
+.price{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.lowprice,.maxprice{
+    width: 48%;
+}
+.lowprice input , .maxprice input{
+width: 100%;
+}
+.price input[type="text"]{
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    text-align: center;
+
+}
+.price .maxprice input[type="range"]{
+    direction: rtl;
+}
+.categories .searchfilter{
+    background-color: rgba(12, 48, 255, 0.808);
+    border: none;
+    width: 200px;
+    height: 30px;
+    display: none;
+}
+.categories .clearfilter{
+    background-color: rgba(255, 12, 32, 0.42);
+    border: none;
+    width: 200px;
+    height: 30px;
+    display: none;
+}
+.categories .clearfilter:hover{
+    background-color: rgba(255, 12, 32, 0.966);
+}
+.categories .allproducts{
+width: 250px;
+}
+
+@media (max-width:667px) {
+    .categories{
+        width: 300px;
+        border: 3px solid rgb(30, 166, 219);
+        border-left: none;
+        padding: 6px;
+        left: -315px;
+        top: 81px; 
+        justify-content: space-evenly;
+    }
+    .categories button{
+        font-size: 13px;
+        padding: 3px 8px;
+        margin: 4px 2px;
+    }
+    .arrow i{
+        left: 325px;
+        top: 150px;
+        font-size: 36px;
+    }
+}
+
+@media (max-width:550px) {
+    .categories{
+        width: 230px;
+        border: 3px solid rgb(30, 166, 219);
+        border-left: none;
+        padding: 5px;
+        left: -245px;
+        top: 59px; 
+        justify-content: space-evenly;
+    }
+    .categories button{
+        font-size: 12px;
+        padding: 2px 7px;
+        margin: 4px 2px;
+    }
+    .arrow i{
+        left: 255px;
+        top: 150px;
+        font-size: 30px;
+    }
+    .arrow i::after{
+        transform: translate(-0%,-100%);
+        font-size: 12px;
+    }
+}
+

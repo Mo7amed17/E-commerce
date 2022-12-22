@@ -1,0 +1,104 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 247, 237);
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    list-style: none;
+    align-items: center;
+}
+li i{
+    font-size: 20px;
+    position: relative;
+}
+li i span{
+position: absolute;
+left: 50%;
+top: 0%;
+transform: translate(-40%,-90%);
+font-size: 14px;
+}
+.logo{
+    width: 120px;
+}
+.logo img{
+    width: 100%;
+}
+h1{
+    margin: 0px 0px;
+    text-align: center;
+    color:transparent;
+    background-color: rgb(3, 158, 150);
+    padding: 15px 0px;
+    animation: light 5s linear infinite alternate;
+    cursor: default;
+    font-size: 44px;
+}
+h1:hover{
+    animation: none;
+    color: white;
+}
+@media(max-width:767px){
+    a{
+        font-size: 20px;
+    }
+    li i{
+        font-size: 18px;
+    }
+}
+@media(max-width:550px){
+    ul{
+        width: 60%;
+        justify-content: space-evenly;
+    }
+    a{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 26px;
+    }
+    li i{
+        font-size: 16px;
+    }
+    li i span{
+        transform: translate(-30%,-100%);
+        font-size: 12px;
+        }
+}
+@media(max-width:400px){
+    ul{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+    a{
+        font-size: 16px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    li i{
+        font-size: 14px;
+    }
+}
+
+@keyframes light {
+0%,40%,80%{
+    color: transparent;
+}
+10%,50%,100%{
+    color:rgb(255, 255, 255);
+}
+}

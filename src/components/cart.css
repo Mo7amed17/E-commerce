@@ -1,0 +1,511 @@
+.cart h2{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 30px;
+}
+
+.cart table{
+    width: min-content;
+    margin-top: 30px;
+    display: none;
+}
+.cart table th,.cart table td{
+    background-color: transparent;
+    margin: 0px;
+    padding: 5px 0px;
+}
+.cart table thead tr th{
+    font-size: 26px;
+}
+.cart table tr{
+border-bottom: 3px solid gray;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.cart table thead tr th:first-of-type{
+    width: 50%;
+}
+.cart table tbody tr td:first-of-type img{
+    width: 100px;
+    height: 100%;
+}
+.cart table tbody tr td .information{
+   width: 100%;
+}
+.cart table tbody tr td{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.cart table tbody tr td:first-of-type img {
+    margin-left: 5px;
+    border-radius: 10px;
+  }
+.cart table tbody tr td:first-of-type{
+    width: 50%;
+    justify-content: space-evenly;
+}
+.cart table tbody .quantity{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cart table tbody .quantity button{
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.cart table tfoot tr {
+    border: none;
+    margin-top: 10px;
+    position: relative;
+}
+.cart table tfoot tr .confirm{
+    width: fit-content;
+    font-size: 32px;
+    border: none;
+    background-color: rgb(10, 177, 177);
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.paynow{
+    margin-top: 50px;
+    border: 2px solid gray;
+    box-shadow: 0px 0px 10px 1px gray;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+}
+.paynow h2{
+    margin: 20px 0px;
+}
+.paynow h3 span{
+    color: gray;
+}
+.paynow h3 div{
+    color: gray;
+}
+.paynow h2:nth-of-type(2) span:first-of-type{
+    position: relative;
+    color: gray;
+    margin-right: 10px;
+    display: none;
+}
+.paynow h2:nth-of-type(2) span:first-of-type::after{
+    position: absolute;
+    content:"";
+    background-color: black;
+    height: 3px;
+    width: 100%;
+    top: 50%;
+    left: 0%;
+}
+.userorders{
+    display: none;
+}
+.removeproduct {
+    position: relative;
+}
+.removeproduct i{
+    position: absolute;
+right: -25%;    
+cursor: pointer;
+    color: gray;
+    font-size: 30px;
+}
+.paynow h2:last-of-type{
+    margin: 0;
+    padding: 30px 0px;
+    border-bottom: 2px solid gray;
+}
+.paynow .discount{
+    height: 30px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.paynow .discount::after{
+    position: absolute;
+    content: "";
+    left: 0%;
+    width: 100%;
+    background-color: gray;
+    height: 2px ;
+    bottom: -70%;
+}
+.paynow .discount button{
+    width: 30%;
+    font-size: 24px;
+    letter-spacing: 2px;
+    height: 100%;
+    color: white;
+    background-color: rgb(9, 151, 151);
+    border: none;
+    cursor: pointer;
+}
+.paynow .discount input{
+    padding: 0px ;
+    padding-left: 5px;
+width: 70%;
+height: 100%;
+border: none;
+outline: none;
+font-size: 18px;
+}
+.paynow .edit{
+    background-color: rgb(8, 173, 179);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+.paynow .submit{
+    background-color: rgb(48, 179, 8);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    padding: 5px 20px;
+    margin:  20px 0px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cart table tbody tr td .information h3{
+    margin: 5px 0px;
+    font-size: 18px;
+}
+.userorders{
+    margin-top: 250px;
+}
+.userorders h2{
+    text-align: center;
+    font-size: 38px;
+}
+.ordersflex{
+    border-bottom: 2px solid gray !important;
+    padding-bottom: 3px !important;
+}
+.ordersflex:last-of-type{
+    border: none !important;
+}
+.ordersflex td{
+display: flex !important;
+flex-wrap: wrap !important;
+justify-content: center !important;
+align-items: center !important;
+}
+.ordersflex td div{
+border-bottom: 1px solid gray !important;
+padding: 1px 0px 5px !important;
+width: 100% !important;
+}
+.ordersflex td div:last-of-type{
+margin-bottom: 2px !important;
+border: none !important;
+padding: 0 !important;
+}
+.headerback th{
+    background-color: transparent;
+}
+
+@media(max-width:992px) {
+    .removeproduct i{
+        font-size: 24px;
+    }
+    .cart h2 {
+        font-size: 32px;
+        margin-top: 30px;
+    }
+    .cart table thead tr th {
+        font-size: 22px;
+    }
+    .cart table td, .cart table th {
+    width: 161px;
+    }
+    .cart table tfoot tr .confirm {
+        font-size: 26px;
+        padding: 5px 10px;
+    }
+    .cart table tbody tr td {
+    font-size: 18px;
+    font-weight: bold;
+    }
+    .cart table tbody tr td .information h3{
+        font-size: 18px;
+    }
+    .cart table tbody .quantity button {
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+    }
+}
+@media(max-width:850px) {
+    .paynow h2 ,.paynow h3{
+        font-size: 20px;
+      }
+    .paynow h3 div{
+        font-size: 18px;
+        text-transform: capitalize;
+      }
+    .cart h2 {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+    .cart table thead tr th {
+        font-size: 20px;
+    }
+    .cart table td, .cart table th {
+    width: 120px;
+    }
+    .cart table tfoot tr .confirm {
+        font-size: 22px;
+        padding: 5px 10px;
+    }
+    .cart table tbody tr td {
+    font-size: 16px;
+    }
+    .cart table tbody tr td .information h3{
+        font-size: 16px;
+    }
+    .cart table tbody .quantity button {
+        font-size: 18px;
+        width: 28px;
+        height: 28px;
+    }
+}
+@media(max-width:710px) {
+    .removeproduct i{
+        font-size: 18px;
+    }
+    .cart h2 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    .cart table thead tr th {
+        font-size: 18px;
+    }
+    .cart table td, .cart table th {
+    width: 80px;
+    }
+    .cart table tfoot tr .confirm {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+    .cart table tbody tr td {
+    font-size: 14px;
+    }
+    .cart table tbody tr td:first-of-type img {
+        width: 70px;
+        height: 100%;
+      }
+    .cart table tbody tr td .information h3{
+        font-size: 13px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .cart table tbody .quantity button {
+        font-size: 16px;
+        width: 24px;
+        height: 24px;
+    }
+}
+@media(max-width:500px) {
+    .paynow h2 ,.paynow h3{
+        font-size: 17px;
+      }
+    .paynow h3 div{
+        font-size: 15px;
+        text-transform: capitalize;
+      }
+      .paynow .discount input {
+        font-size: 15px;
+      }
+      .paynow .discount button {
+        font-size: 17px;
+      }
+      .paynow {
+  width: 300px;
+}
+.paynow .discount {
+    height: 25px;
+    width: 220px;
+  }
+  .paynow .edit {
+    font-size: 17px;
+    padding: 4px 12px;
+  }
+  .paynow .submit {
+    font-size: 22px;
+    padding: 4px 16px;
+    margin: 20px 0px;
+  }
+    .removeproduct i{
+        font-size: 16px;
+    }
+    .cart h2 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .cart table thead tr th {
+        font-size: 14px;
+    }
+    .cart table td, .cart table th {
+    width: 60px;
+    }
+    .cart table tfoot tr .confirm {
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+    .cart table tbody tr td {
+    font-size: 12px;
+    }
+    .cart table tbody tr td:first-of-type img {
+        width: 65px;
+        height: 100%;
+      }
+    .cart table tbody tr td .information h3{
+        font-size: 12px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .cart table tbody .quantity button {
+        font-size: 12px;
+        width: 18px;
+        height: 18px;
+    }
+}
+@media(max-width:420px) {
+    .removeproduct i{
+        font-size: 16px;
+    }
+    .cart table tr {
+        border-bottom: 2px solid gray;
+      }
+    .cart table thead tr th {
+        font-size: 13px;
+    }
+    .cart table thead tr th:first-of-type {
+        width: 50%;
+      }
+    .cart table td, .cart table th {
+    width: 50px;
+    }
+    .cart table tfoot tr .confirm {
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+    .cart table tbody tr td {
+    font-size: 12px;
+    }
+    .cart table tbody tr td:first-of-type img {
+        width: 65px;
+        height: 100%;
+      }
+    .cart table tbody tr td .information h3{
+        font-size: 12px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .cart table tbody .quantity button {
+        font-size: 8px;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media(max-width:385px) {
+    .paynow h2 ,.paynow h3{
+        font-size: 16px;
+      }
+    .paynow h3 div{
+        font-size: 14px;
+        text-transform: capitalize;
+      }
+      .paynow .discount input {
+        font-size: 14px;
+      }
+      .paynow .discount button {
+        font-size: 16px;
+      }
+      .paynow {
+  width: 260px;
+}
+.paynow .discount {
+    height: 24px;
+    width: 200px;
+  }
+  .paynow .edit {
+    font-size: 16px;
+    padding: 3px 10px;
+  }
+  .paynow .submit {
+    font-size: 20px;
+    padding: 3px 12px;
+    margin: 20px 0px;
+  }
+    .removeproduct i{
+        font-size: 14px;
+    }
+    .cart table tr {
+        border-bottom: 2px solid gray;
+      }
+    .cart table thead tr th {
+        font-size: 12px;
+    }
+    .cart table thead tr th:first-of-type {
+        width: 50%;
+      }
+    .cart table td, .cart table th {
+    width: 40px;
+    }
+    .cart table tfoot tr .confirm {
+        font-size: 14px;
+        padding: 3px 6px;
+    }
+    .cart table tbody tr td {
+    font-size: 11px;
+    }
+    .cart table tbody tr td:first-of-type img {
+        width: 60px;
+      }
+    .cart table tbody tr td .information h3{
+        font-size: 10px;
+    }
+    .cart table tbody .quantity button {
+        font-size: 8px;
+        width: 14px;
+        height: 14px;
+    }
+}

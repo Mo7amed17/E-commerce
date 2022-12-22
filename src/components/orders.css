@@ -1,0 +1,134 @@
+.adminorders table th,.adminorders table td{
+width: 200px ;
+}
+.adminorders table th{
+    font-size: 24px;
+    background-color: transparent;
+}
+.status{
+    position: relative;
+    font-weight: bold;
+}
+.status i{
+    position: absolute;
+    right: -20%;
+    font-size: 26px;
+    color: green;
+    cursor: pointer;
+}
+@media (max-width:1050px) {
+    .adminorders table th, .adminorders table td {
+        width: 160px;
+      }
+      .adminorders table th {
+        font-size: 22px;
+      }
+    }
+@media (max-width:900px) {
+    .adminorders table th, .adminorders table td {
+        width: 140px;
+      }
+      .adminorders table th {
+        font-size: 22px;
+      }
+      .status i{
+        right: -23%;
+        font-size: 26px;
+    }
+}
+@media (max-width:800px) {
+    .adminorders table th, .adminorders table td {
+        width: 110px;
+      }
+      .adminorders table th {
+        font-size: 18px;
+      }
+      .adminorders table td{
+        font-size: 14px;
+      }
+      .status i{
+        right: -25%;
+        font-size: 22px;
+    }
+}
+@media (max-width:640px) {
+    .adminorders table th, .adminorders table td {
+        width: 80px;
+      }
+      .adminorders table th {
+        font-size: 16px;
+      }
+      .adminorders table td{
+        font-size: 12px;
+      }
+      .status i{
+        right: -30%;
+        font-size: 20px;
+    }
+}
+@media (max-width:480px) {
+    .adminorders table th, .adminorders table td {
+        width: 60px;
+      }
+      .adminorders table th {
+        font-size: 13px;
+      }
+      .adminorders table td{
+        font-size: 9px;
+      }
+      .status i{
+        right: -25%;
+        font-size: 14px;
+    }
+}
+@media (max-width:365px) {
+    .adminorders table th, .adminorders table td {
+        width: 55px;
+      }
+      .adminorders table {
+        margin-left: -8px;
+      }
+      .adminorders table th {
+        font-size: 13px;
+      }
+      .adminorders table td{
+        font-size: 9px;
+      }
+      .status i{
+        right: -30%;
+        font-size: 14px;
+    }
+}
+
+
+.footer{
+    margin-top: 80px;
+    background-color: rgb(3, 158, 150);
+    text-align: center;
+    padding-top: 10px;
+}
+.footer p{
+    font-size: 26px;
+    margin: 10px 0px;
+}
+.footer p span{
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.footer i{
+margin-bottom: 15px;
+    font-size: 30px;
+    color: white;
+    padding: 4px 5px 2px;
+    border-radius: 5px;
+}
+.footer .fa-github{
+background-color: black;
+}
+
+.footer .fa-linkedin-in{
+    background-color: #1653e3;
+    margin-left: 30px;
+}

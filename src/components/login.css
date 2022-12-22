@@ -1,0 +1,213 @@
+.theform{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 300px;
+    box-shadow: 0px 0px 10px 5px gray;
+    padding: 20px 10px;
+    border-radius: 10px;
+    outline: 1px solid gray;
+}
+
+form input{
+border: none;
+outline: none;
+width: 100%;
+font-size: 20px;
+padding: 5px;
+margin-bottom: 20px;
+border-bottom: 2px solid transparent ;
+}
+form input:focus{
+animation: active 0.5s linear  infinite  alternate;
+}
+@keyframes active {
+    form{
+        border-color: transparent;
+    }
+    to{
+        border-color:rgb(0, 144, 201) ;
+    }
+}
+form a{
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 144, 201);
+}
+form button{
+    width: 90%;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(16, 182, 16);
+    border: none;
+    border-radius: 10px;
+    padding: 5px 0px;
+    cursor: pointer;
+    margin:10px 0px 20px
+}
+form .delete{
+    background-color: rgb(211, 24, 24);
+}
+
+.login{
+    margin: 30px 0px 50px;
+}
+h5{
+    text-align: center;
+    font-size: 22px;
+    margin: 10px 0px;
+}
+table{
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform:translateX(-50%)
+}
+table td ,table th{
+    width: 200px;
+    text-align: center;
+    background-color: #eee;
+    margin: 1px;
+}
+table tr:last-of-type{
+    display: flex;
+    justify-content: center;
+}
+.deleteaddress{
+    text-align: center;
+}
+.deleteaddress button{
+    width: 200px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(196, 11, 11);
+    border: none;
+    border-radius: 10px;
+    padding: 5px 0px;
+    cursor: pointer;
+    margin-top: 10px;
+    
+}
+.swal2-footer input{
+border: none;
+outline: none;
+font-size: 20px;
+border-bottom: 2px solid transparent;
+animation: active 0.5s linear  infinite  alternate;
+}
+
+.swal2-popup {
+    border-radius: 20px;
+        background: white;
+        color: #1aa5c6;
+    font-size: 1rem;
+  }
+  .swal2-styled.swal2-confirm {
+    background-color: white;
+    outline:3px solid #1aa5c6;
+    color: #1aa5c6;
+    font-size: 20px;
+    font-weight:bold;
+    border-radius:20px;
+    padding:8px 25px;
+  }
+  .swal2-styled.swal2-confirm:hover {
+    background-color:  #1aa5c6;
+    outline:3px solid #1aa5c6;
+    color: white;
+    border-radius:20px;
+  }
+@media (max-width:650px) {
+    table td, table th {
+        width: 170px;
+        margin: 1px;
+        font-size:15px
+      }
+}
+@media (max-width:550px) {
+    .swal2-popup {
+        grid-template-columns: minmax(0, 100%);
+        width: 20em;
+        max-width: 100%;
+        padding: 0 0 1em;
+        border-radius: 20px;
+        background: white;
+        color: #1aa5c6;
+        font-size: 0.7rem;
+      }
+      .swal2-styled.swal2-confirm {
+        font-size: 18px;
+        padding:3px 15px;
+      }
+    table td, table th {
+        width: 140px;
+        margin: 1px;
+        font-size:13px
+      }
+      form button{
+        font-size: 18px;
+        margin:5px 0px ;
+        width:80%
+    }
+    form{
+        width: 230px;
+    }
+    form input{
+        font-size: 14px;
+        margin:5px 0px;
+    }
+    h5 {
+        font-size: 20px;
+        margin: 20px 0px 0px;
+      }
+      .theform {
+        margin-top: 30px;
+      }
+      .deleteaddress button {
+        width: 180px;
+        font-size: 18px;
+      }
+}
+@media (max-width:450px) {
+    
+    form{
+        padding:10px
+    }
+    table td, table th {
+        width: 100px;
+        margin: 1px;
+        font-size:12px
+      }
+      form button{
+        font-size: 18px;
+        margin:5px 0px ;
+        width:80%
+    }
+    form{
+        width: 220px;
+    }
+    form input{
+        font-size: 14px;
+        margin:5px 0px;
+    }
+    h5 {
+        font-size: 20px;
+        margin: 20px 0px 0px;
+      }
+      .theform {
+        margin-top: 30px;
+      }
+      .deleteaddress button {
+        width: 180px;
+        font-size: 20px;
+      }
+}

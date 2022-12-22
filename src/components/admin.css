@@ -1,0 +1,318 @@
+
+.addproduct{
+    margin-top: 25px;
+}
+.addproduct form{
+    width: 350px;
+    padding: 20px;
+}
+.addproduct h2{
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: 30px;
+    text-align: center;
+}
+.addproduct button{
+    margin: 10px 0px;
+}
+.thedeatails{
+    display: flex;
+    justify-content: space-evenly;
+}
+.thedeatails .left{
+    width: 40%;
+}
+.thedeatails .left label{
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.thedeatails .left select{
+    color: white;
+    background-color: gray;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.thedeatails .left select option{
+    color: black;
+    background-color: white;
+}
+.thedeatails .right{
+    width: 40%;
+    margin-right:35px
+}
+.thedeatails .right .productshape{
+    width: 100%;
+}
+.thedeatails .right .theimages{
+    position: relative;
+    height: 380px;
+}
+.thedeatails .right img{
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+
+}
+.thedeatails .right .productshape{
+    border: 2px solid gray;
+    text-align: center;
+    padding: 20px;
+    margin-top: 22px;
+    border-radius: 10px;
+}
+.thedeatails .right .productshape h3{
+    font-size: 24px;
+}
+.thedeatails .right .productshape .smallimages{
+    height: 60px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    bottom: 0%;
+    background-color: gray;
+    border-radius: 10px;
+}
+.thedeatails .right .productshape .smallimages img{
+    width: 60px;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.description1{
+    color: gray;
+}
+
+@media (max-width:900px) {
+    .addproduct form{
+        width: 300px;
+        padding: 15px;
+    }
+    .thedeatails .right .theimages{
+        height: 340px;
+    }
+    .thedeatails .right .productshape{
+        border: 2px solid gray;
+        text-align: center;
+        padding: 20px;
+        margin-top: 28px;
+        border-radius: 10px;
+    }
+}
+@media (max-width:767px) {
+    .addproduct h2{
+        font-size:24px;
+    }
+    .addproduct form{
+        width: 250px;
+        padding: 10px;
+    }
+    .addproduct form input{
+        font-size: 18px;
+        margin-bottom:10px;
+    }
+    .addproduct form button{
+        font-size: 20px;
+    }
+    .thedeatails .right .theimages{
+        height: 240px;
+    }
+    .thedeatails .right .productshape{
+        border: 2px solid gray;
+        text-align: center;
+        padding: 10px;
+        margin-top: 50px;
+        border-radius: 10px;
+        width:90%;
+    }
+    .thedeatails .right .productshape h3{
+        font-size: 18px;
+        margin:6px 0px;
+    }
+    .thedeatails .right .productshape p{
+        margin:6px 0px;
+    }
+    .thedeatails .right .productshape .smallimages{
+        height: 50px;
+        width: 100%;
+    }
+    .thedeatails .right .productshape .smallimages img{
+        width: 50px;
+    }
+    .thedeatails .right{
+        width: 40%;
+        margin-right:0px
+    }
+}
+@media (max-width:650px) {
+    .addproduct form{
+        width: 210px;
+        padding: 10px;
+    }
+    .addproduct form input{
+        font-size: 15px;
+        margin-bottom:5px;
+    }
+    .addproduct form button{
+        font-size: 18px;
+    }
+    .thedeatails .left select{
+        font-size: 15px;
+    }
+    .thedeatails .left label {
+        font-size: 16px;
+      }
+    .thedeatails .right .theimages{
+        height: 200px;
+    }
+    .thedeatails .right .productshape{
+        border: 2px solid gray;
+        text-align: center;
+        padding: 6px;
+        margin-top: 55px;
+        border-radius: 10px;
+        width:80%;
+    }
+    .thedeatails .right .productshape h3{
+        font-size: 16px;
+        margin:5px 0px;
+    }
+    .thedeatails .right .productshape p{
+        margin:5px 0px;
+    }
+    .thedeatails .right .productshape .smallimages{
+        height: 40px;
+        width: 100%;
+    }
+    .thedeatails .right .productshape .smallimages img{
+        width: 40px;
+    }
+    .thedeatails .right{
+        width: 40%;
+        margin-right:-30px
+    }
+}
+@media (max-width:550px) {
+    .addproduct form{
+        width: 170px;
+        padding: 6px;
+    }
+    .addproduct form input{
+        font-size: 14px;
+        margin-bottom:5px;
+    }
+    .addproduct form button{
+        font-size: 16px;
+        width:80%
+    }
+    .thedeatails .left select{
+        font-size: 12px;
+    }
+    .thedeatails .left label {
+        font-size: 14px;
+      }
+    .thedeatails .right .theimages{
+        height: 150px;
+    }
+    .thedeatails .right .productshape{
+        padding: 5px;
+        margin-top: 60px;
+        border-radius: 10px;
+        width:70%;
+    }
+    .thedeatails .right .productshape h3{
+        font-size: 14px;
+        margin:3px 0px;
+    }
+    .thedeatails .right .productshape p{
+        margin:3px 0px;
+        font-size: 12px;
+    }
+    .thedeatails .right .productshape .smallimages{
+        height: 35px;
+        width: 100%;
+    }
+    .thedeatails .right .productshape .smallimages img{
+        width: 35px;
+    }
+    .thedeatails .right{
+        width: 250px;
+        margin-right:-50px
+    }
+    .addproduct{
+        overflow-x:hidden;
+        padding-bottom:30px;
+    }
+}
+@media (max-width:550px) {
+    .thedeatails .right{
+        width: 220px;
+        margin-right:-70px
+    }
+
+}
+@media (max-width:400px) {
+    .addproduct form{
+        width: 150px;
+        padding: 2px;
+    }
+    .addproduct form input{
+        font-size: 10px;
+        margin-bottom:2px;
+    }
+    .addproduct form button{
+        font-size: 12px;
+        width:80%
+    }
+    .thedeatails .left select{
+        font-size: 10px;
+    }
+    .thedeatails .left label {
+        font-size: 11px;
+      }
+    .thedeatails .right .theimages{
+        height: 130px;
+    }
+    .thedeatails .right .productshape{
+        padding: 5px;
+        margin-top: 35px;
+        border-radius: 10px;
+        width:70%;
+    }
+    .thedeatails .right .productshape h3{
+        font-size: 12px;
+        margin:3px 0px;
+    }
+    .thedeatails .right .productshape p{
+        margin:3px 0px;
+        font-size: 10px;
+    }
+    .thedeatails .right .productshape .smallimages{
+        height: 30px;
+        width: 100%;
+    }
+    .thedeatails .right .productshape .smallimages img{
+        width: 30px;
+    }
+    .thedeatails .right{
+        width: 210px;
+        margin-right:-55px
+    }
+    .addproduct h2{
+        font-size:18px
+    }
+    .addproduct{
+        margin-top:15px
+    }
+}
+@media (max-width:550px) {
+    .thedeatails .right{
+        width: 200px;
+        margin-right:-50px;
+        margin-left:20px
+    }
+
+}
