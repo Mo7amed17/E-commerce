@@ -46,7 +46,21 @@ function ProductDetails(){
         .then((res)=>res.json())
         .then((data)=>{
             let addtocart=document.querySelector(".addtocart")
+            let outofstock=document.querySelector(".outofstock")
+            let whenoutofstock=document.querySelector(".whenoutofstock")
             addtocart.style.display="inline-block"
+            if(data.stock===0){
+                addtocart.disabled=true;
+                addtocart.addEventListener("click",(e)=>{
+                    e.preventDefault()
+                })
+                addtocart.style.cursor="not-allowed"
+                addtocart.style.backgroundColor="gray"
+                setTimeout(() => {
+                    outofstock.style.display="block"
+                    whenoutofstock.style.display="block"
+                }, 100);
+            }
             setproduct(data)
             setproductreviews(data.userreviews)
             setprice(data.price)
@@ -95,6 +109,7 @@ function ProductDetails(){
                     .then((res)=>res.json())
                     .then((data)=>{setcart(data.cart)
                     setuser(data)})
+                    
     }, []);
                 
     return(
@@ -104,6 +119,7 @@ function ProductDetails(){
             <div className="leftdetails">
                 <img src={product.thumbnail} alt={`${product.title}`} className="mainimage"/>
                 <div className="smallimages"></div>
+                <div className="outofstock">OUT OF STOCK</div>
             </div>
             <div className="rightdetails">
                 <p className="descreption">{product.description}</p>
@@ -165,6 +181,7 @@ function ProductDetails(){
                     }
                 }} className="addtocart">Add To Cart</button>
             </div>
+            <div className="whenoutofstock">Product Will Be Available Soon</div>
         </div>
                 {
                     admin && <div className="editproduct">

@@ -1,6 +1,6 @@
 
 .comments{
-    margin-top: 70px;
+    margin-top: 210px;
     text-align: center;
 }
 
@@ -55,6 +55,7 @@ font-weight: bold;
     justify-content: center;
     margin-top: 50px;
     cursor: default;
+    margin-bottom: 50px;
 }
 .reviews h2{
     font-size: 36px;
@@ -130,7 +131,7 @@ margin-left: 3px;
         color: rgb(61, 61, 61);
       }
       .comments {
-        margin-top: 50px;
+        margin-top: 150px;
       }
       .reviews {
         margin-top: 30px;
