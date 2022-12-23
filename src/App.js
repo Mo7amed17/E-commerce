@@ -17,8 +17,7 @@ import Orders from "./components/orders";
 function App() {
   let loggedin=window.localStorage.getItem("loggedin")
   let nav=window.localStorage.getItem("nav")
-  let admin=window.localStorage.getItem("admin")
-  
+  let admin=window.localStorage.getItem("admin")  
   
   function adminpage(){
     if(admin===null){
@@ -60,14 +59,14 @@ function App() {
     }
   }
   function signup(){
-    if(loggedin===null){
+    if(loggedin===null ){
       return(<Signup/>)
     }
     else if(nav==="yes"){
       return(
         <>
-        <Navigate to={"/Account/Edit-Account"}/>
-        <Editaccount/>
+        <Navigate to={"/"}/>
+        <Content/>
         </>)
     }
     else if(loggedin==="yes" && admin==="yes"){
@@ -78,14 +77,7 @@ function App() {
         </>
       )
     }
-    else {
-      return(
-        <>
-        <Navigate to={"/Account/Edit-Account"}/>
-        <Editaccount/>
-        </>
-      )
-    }
+    
   }
   function account(){
     if(loggedin===null){

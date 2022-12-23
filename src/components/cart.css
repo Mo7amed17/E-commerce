@@ -86,6 +86,7 @@ align-items: center;
 }
 
 .paynow{
+    margin-bottom: 50px;
     margin-top: 50px;
     border: 2px solid gray;
     box-shadow: 0px 0px 10px 1px gray;

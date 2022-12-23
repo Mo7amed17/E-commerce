@@ -6,6 +6,7 @@ import Swal from 'sweetalert2'
 import { Link } from 'react-router-dom';
 import Ads from './ads';
 function Signup(){
+    
     const [firstname, setfirstname] = useState("");
     const [lastname, setlasttname] = useState("");
     const [email, setemail] = useState("");
@@ -39,10 +40,9 @@ function Signup(){
             You Will Use it if You Forgot You Password`,
             'success'
           )
-    window.console.clear()
     setTimeout(() => {
-        window.location.reload();
-    }, 3500);});
+        window.location.href=`${window.location.origin}/E-commerce/#/Login`
+    }, 2500);});
     
     }
 

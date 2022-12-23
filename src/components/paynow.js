@@ -16,6 +16,7 @@ function Paynow(){
                 fetch(`https://steel-synonymous-judge.glitch.me/users/${userid}`)
                 .then((res)=>res.json())
                 .then((data)=>{
+                    
                     setuser(data)
                     setorders(data.orders)
                     if(couponstatus==="yes"){
@@ -31,6 +32,7 @@ function Paynow(){
                        setgrandtotaly(data.subTotal +30) 
                     }
                 })
+                
             }, []);
     return(
         <>
@@ -68,6 +70,7 @@ function Paynow(){
                 }}>Ok</button>
             </div>
             <h2 className="grandtotal">Grand Total = $<span>{grandtotaly}</span></h2>
+
             <div className="shipaddress">
                 <h3>Your Address : <div>{user.address}</div></h3>
                 <h3>Your Phone : <div>{user.phone}</div></h3>
@@ -115,20 +118,48 @@ function Paynow(){
                                     
                                 }
                         }).then((data)=>{
-                            window.sessionStorage.clear();
+                            // we stop here
+                            user.cart.map((product,index)=>{
+                                if(index+1<user.cart.length){
+                                    product.stock=+product.stock - +product.quantity
+                                    axios.patch(`https://steel-synonymous-judge.glitch.me/products/${product.productId}`,{
+                                        stock:product.stock
+                                    }).then((d)=>{})
+                                }else {
+                                    product.stock=+product.stock - +product.quantity
+                                    axios.patch(`https://steel-synonymous-judge.glitch.me/products/${product.productId}`,{
+                                        stock:product.stock
+                                    }).then((d)=>{
+                                        window.sessionStorage.clear();
                             axios.patch(`https://steel-synonymous-judge.glitch.me/users/${userid}`,{
                                 cart:[],
                                 orders:orders
                             }).then((d)=>{
-                                Swal.fire(
-                                    'Success',
-                                    'Your Order Has Been Created',
-                                    'success'
-                                  )
-                                  setTimeout(() => {
+                                let timerInterval
+                                Swal.fire({
+                                  title: 'Please Wait',
+                                  html: 'Your Are Creating Your Order.',
+                                  timer: 1500,
+                                  timerProgressBar: false,
+                                  didOpen: () => {
+                                    Swal.showLoading()
+                                  },
+                                  willClose: () => {
+                                    clearInterval(timerInterval)
+                                  }
+                                })
+                                setTimeout(() => {
                                     window.location=`${window.location.origin}/E-commerce/#`
-                                  }, 2000);
+                                }, 2000);
+                                setTimeout(() => {
+                                    window.location.reload()
+                                }, 2300);
                             })
+                                    })
+                                    
+                                }
+                            })
+                            
                         })
                     }
                     

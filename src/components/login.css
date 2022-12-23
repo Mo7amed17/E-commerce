@@ -81,9 +81,10 @@ table tr:last-of-type{
     display: flex;
     justify-content: center;
 }
-.deleteaddress{
+.deleteaddress {
     text-align: center;
-}
+    margin-bottom: 50px;
+  }
 .deleteaddress button{
     width: 200px;
     font-size: 24px;

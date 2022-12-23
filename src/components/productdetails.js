@@ -130,7 +130,8 @@ function ProductDetails(){
                                 productPrice:product.price,
                                 quantity:1,
                                 productImage:product.thumbnail,
-                                productBrand:product.brand
+                                productBrand:product.brand,
+                                stock:product.stock
                             })
                             axios.patch(`https://steel-synonymous-judge.glitch.me/users/${userid}`,{
                                 cart:cart
