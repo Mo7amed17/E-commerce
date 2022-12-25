@@ -6,6 +6,39 @@
     flex-wrap: wrap;
     overflow-y: hidden;
 }
+.arrowtotop{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color:  white;
+    font-weight: bold;
+    font-size: 46px;
+    cursor: pointer;
+    z-index: 99999;
+    transform: rotate(-45deg);
+    display: none;
+}
+.arrowtotop::after{
+    background-color: transparent;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    content: "";
+    left: 60%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    border: 2px solid rgb(30, 166, 219);
+    border-radius: 50%;
+    background-color: rgb(30, 166, 219);
+    z-index: -1;
+}
+.arrowtotop:hover{
+    color: rgb(30, 166, 219);
+}
+.arrowtotop:hover::after{
+    background-color: white;
+}
+
 .product{
     width: 260px;
     height:335px;

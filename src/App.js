@@ -52,8 +52,8 @@ function App() {
     else {
       return(
         <>
-        <Navigate to={"/Account/Edit-Account"}/>
-        <Editaccount/>
+        <Navigate to={"/"}/>
+        <Content/>
         </>
       )
     }
@@ -65,8 +65,8 @@ function App() {
     else if(nav==="yes"){
       return(
         <>
-        <Navigate to={"/"}/>
-        <Content/>
+        <Navigate to={"/Login"}/>
+        <Login/>
         </>)
     }
     else if(loggedin==="yes" && admin==="yes"){

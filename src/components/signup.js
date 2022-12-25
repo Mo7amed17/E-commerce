@@ -53,7 +53,7 @@ function Signup(){
         <div className="theform">
             <form  onSubmit={(event)=>{
                 event.preventDefault()
-                if(emails.includes(`${email}`)){
+                if(emails.includes(`${email}`) || email==="mo7amedatef17@gmail.com"){
                 Swal.fire(`${email} 
                 already used`)
                 }else{

@@ -7,6 +7,15 @@ import './filtermenu.css'
 import Swal from "sweetalert2";
 import Footer from "./footer";
 function Content(){
+    let arrowtotop=document.querySelector(".arrowtotop")
+    window.onscroll=()=>{
+        if(window.scrollY>=750){
+            arrowtotop.style.display="block"
+        }
+        else{
+            arrowtotop.style.display="none"
+        }
+    }
     let direction=0;
     let api="https://steel-synonymous-judge.glitch.me"
 
@@ -52,7 +61,13 @@ function Content(){
         
     },[])
     return(
-        <> <Ads/>
+        <>
+         <Ads/>
+         <div className="arrowtotop">
+         <i className="fa-solid fa-location-arrow" onClick={()=>{
+            window.scrollTo(0,0)
+         }}></i>
+         </div>
             <div className="container">
             <div className="categories">
             <div className="arrow">
